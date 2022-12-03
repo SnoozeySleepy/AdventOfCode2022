@@ -4,7 +4,7 @@ import string
 import itertools
 
 def prio(x):
-    return ''.join([string.ascii_lowercase, string.ascii_uppercase]).index(x) + 1
+    return string.ascii_letters.index(x) + 1
 
 rucksacks = [line.strip() for line in open("day3_input").readlines()]
 # part 1
